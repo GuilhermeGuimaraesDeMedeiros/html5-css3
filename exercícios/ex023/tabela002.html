@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+            margin-top: 0;
+        }
+        td.num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+            
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--Anatomia para Tabelas Grandes
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 055 174</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 056 495</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 974 687</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At blanditiis magnam eaque officia nemo perferendis velit, cumque a quae consequatur laudantium dolores nam minus. Eaque molestias odio ducimus atque facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, inventore. Totam eius quasi excepturi vel sapiente asperiores consequuntur, commodi facere mollitia laboriosam explicabo distinctio esse earum, numquam odit. Possimus, aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsum nihil odio quod perferendis voluptas animi ad maxime optio iste dolor ab laborum, eos impedit nulla soluta sunt corrupti excepturi?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At blanditiis magnam eaque officia nemo perferendis velit, cumque a quae consequatur laudantium dolores nam minus. Eaque molestias odio ducimus atque facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, inventore. Totam eius quasi excepturi vel sapiente asperiores consequuntur, commodi facere mollitia laboriosam explicabo distinctio esse earum, numquam odit. Possimus, aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsum nihil odio quod perferendis voluptas animi ad maxime optio iste dolor ab laborum, eos impedit nulla soluta sunt corrupti excepturi?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At blanditiis magnam eaque officia nemo perferendis velit, cumque a quae consequatur laudantium dolores nam minus. Eaque molestias odio ducimus atque facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, inventore. Totam eius quasi excepturi vel sapiente asperiores consequuntur, commodi facere mollitia laboriosam explicabo distinctio esse earum, numquam odit. Possimus, aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsum nihil odio quod perferendis voluptas animi ad maxime optio iste dolor ab laborum, eos impedit nulla soluta sunt corrupti excepturi?</p>
+</body>
+</html>
